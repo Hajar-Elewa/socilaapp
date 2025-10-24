@@ -1,0 +1,4 @@
+# Git will ignore this folder
+node_modules/
+/dist
+.env

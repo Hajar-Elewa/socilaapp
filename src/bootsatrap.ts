@@ -6,6 +6,7 @@ import {IError} from './utiles/errors/types'
 import { Request,Response,NextFunction } from "express"
 import DBConnection from './DB/Models/connectioDB'
 
+
 const bootstrap =  async()=>{
     const port = process.env.PORT || 5000
     app.use(express.json())
@@ -24,6 +25,7 @@ app.use((err: IError, req: Request, res: Response, next: NextFunction) => {
   app.use((req, res) => {
   res.status(404).send('Not found')
 })
+  
 
    app.listen(port,()=>{
     console.log(`server running on port` , port)

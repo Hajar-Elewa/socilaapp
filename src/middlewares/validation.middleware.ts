@@ -17,5 +17,4 @@ const validation = (schema: ZodObject) => {
     next()
   }
 }
-
 export default validation

@@ -1,0 +1,1 @@
+{"version":3,"file":"successHandler.js","sourceRoot":"","sources":["../../src/utiles/successHandler.ts"],"names":[],"mappings":";;;AAEO,MAAM,cAAc,GAAG,CAAC,EAAC,GAAG,EAAE,MAAM,GAAG,GAAG,EAAE,IAAI,GAAG,EAAE,EAAE,OAAO,GAAG,SAAS,EAA8D,EAAE,EAAE;IACjJ,OAAO,GAAG,CAAC,MAAM,CAAC,MAAM,CAAC,CAAC,IAAI,CAAC,EAAE,OAAO,EAAE,IAAI,EAAE,CAAC,CAAC;AACpD,CAAC,CAAA;AAFY,QAAA,cAAc,kBAE1B"}

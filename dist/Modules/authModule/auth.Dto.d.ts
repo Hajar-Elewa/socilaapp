@@ -1,4 +1,7 @@
 import z from "zod";
-import { signupSchema } from "./auth.validation";
+import { confirmEmailSchema, resendOtpSchema, signupSchema, loginSchema } from "./auth.validation";
 export type signDto = z.infer<typeof signupSchema>;
+export type confirmEmailDto = z.infer<typeof confirmEmailSchema>;
+export type resendOtpDto = z.infer<typeof resendOtpSchema>;
+export type loginDto = z.infer<typeof loginSchema>;
 //# sourceMappingURL=auth.DTO.d.ts.map

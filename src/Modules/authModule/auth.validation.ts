@@ -3,10 +3,14 @@ import z from 'zod'
 //by default all of these will be `required()`
 export const signupSchema = z.object({
   email: z.email(),
-  name: z.string(),
+  firstName: z.string(),
+  lastName: z.string(),
   password: z.string(),
-  confirmPassword: z.string()
-}).superRefine((args, ctx) => {//superRefine => U cane add many things to check //ctx=>collect all errors
+  confirmPassword: z.string(),
+  age: z.number().optional(),
+  phone: z.string().optional(),
+})
+.superRefine((args, ctx) => {//superRefine => U cane add many things to check //ctx=>collect all errors
   if (args.confirmPassword !== args.password) {
     ctx.addIssue({
       code: "custom",///custom validation ya3ne
@@ -36,3 +40,17 @@ export const signupSchema = z.object({
 //   error: "must start with 'anas'",
 //   path: ['name']
 // })
+
+export const confirmEmailSchema = z.object({
+  email: z.email(),
+  otp: z.string().length(6)
+})
+
+export const resendOtpSchema = z.object({
+  email: z.email(),
+})
+
+export const loginSchema = z.object({
+  email: z.email(),
+  password: z.string(),
+})
